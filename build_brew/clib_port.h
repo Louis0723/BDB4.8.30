@@ -73,6 +73,8 @@
 #define	UINT64_MAX	18446744073709551615ULL
 #endif	/* DB_WIN32 */
 
+#define	INT64_FMT	"%ld"
+#define	UINT64_FMT	"%lu"
 #endif	/* HAVE_64BIT_TYPES */
 
 /*

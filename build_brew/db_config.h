@@ -1,4 +1,6 @@
-/* DO NOT EDIT: automatically built by dist/s_brew. */
+/* db_config.h.  Generated from config.hin by configure.  */
+/* config.hin.  Generated from configure.ac by autoheader.  */
+
 /* Define to 1 if you want to build a version for running the test suite. */
 /* #undef CONFIG_TEST */
 
@@ -9,11 +11,7 @@
 /* #undef DB_WIN32 */
 
 /* Define to 1 if you want a debugging version. */
-#if defined(_DEBUG)
-#if !defined(DEBUG)
-#define DEBUG 1
-#endif
-#endif
+/* #undef DEBUG */
 
 /* Define to 1 if you want a version that logs read operations. */
 /* #undef DEBUG_ROP */
@@ -25,38 +23,38 @@
 /* #undef DIAGNOSTIC */
 
 /* Define to 1 if 64-bit types are available. */
-/* #undef HAVE_64BIT_TYPES */
+#define HAVE_64BIT_TYPES 1
 
 /* Define to 1 if you have the `abort' function. */
-/* #undef HAVE_ABORT */
+#define HAVE_ABORT 1
 
 /* Define to 1 if you have the `atoi' function. */
 #define HAVE_ATOI 1
 
 /* Define to 1 if you have the `atol' function. */
-/* #undef HAVE_ATOL */
+#define HAVE_ATOL 1
 
 /* Define to 1 to use Solaris library routes for atomic operations. */
 /* #undef HAVE_ATOMIC_SOLARIS */
 
 /* Define to 1 to use native atomic operations. */
-/* #undef HAVE_ATOMIC_SUPPORT */
+#define HAVE_ATOMIC_SUPPORT 1
 
 /* Define to 1 to use GCC and x86 or x86_64 assemlby language atomic
    operations. */
-/* #undef HAVE_ATOMIC_X86_GCC_ASSEMBLY */
+#define HAVE_ATOMIC_X86_GCC_ASSEMBLY 1
 
 /* Define to 1 if you have the `backtrace' function. */
-/* #undef HAVE_BACKTRACE */
+#define HAVE_BACKTRACE 1
 
 /* Define to 1 if you have the `backtrace_symbols' function. */
-/* #undef HAVE_BACKTRACE_SYMBOLS */
+#define HAVE_BACKTRACE_SYMBOLS 1
 
-/* Define to 1 if building BREW. */
-#define HAVE_BREW 1
+/* Define to 1 if building on BREW. */
+/* #undef HAVE_BREW */
 
 /* Define to 1 if building on BREW (SDK2). */
-#define HAVE_BREW_SDK2 1
+/* #undef HAVE_BREW_SDK2 */
 
 /* Define to 1 if you have the `clock_gettime' function. */
 /* #undef HAVE_CLOCK_GETTIME */
@@ -65,13 +63,13 @@
 /* #undef HAVE_CLOCK_MONOTONIC */
 
 /* Define to 1 if building compression support. */
-/* #undef HAVE_COMPRESSION */
+#define HAVE_COMPRESSION 1
 
 /* Define to 1 if Berkeley DB release includes strong cryptography. */
 /* #undef HAVE_CRYPTO */
 
 /* Define to 1 if you have the `ctime_r' function. */
-/* #undef HAVE_CTIME_R  */
+#define HAVE_CTIME_R 1
 
 /* Define to 1 if ctime_r takes a buffer length as a third argument. */
 /* #undef HAVE_CTIME_R_3ARG */
@@ -81,100 +79,100 @@
 
 /* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
    */
-/* #undef HAVE_DIRENT_H */
+#define HAVE_DIRENT_H 1
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
-/* #undef HAVE_DLFCN_H */
+#define HAVE_DLFCN_H 1
 
 /* Define to 1 if you have the <execinfo.h> header file. */
-/* #undef HAVE_EXECINFO_H */
+#define HAVE_EXECINFO_H 1
 
-/* Define to 1 if you have EXIT_SUCCESS/EXIT_FAILURE #defines. */
+/* Define to 1 if platform has EXIT_SUCCESS/EXIT_FAILURE #defines. */
 #define HAVE_EXIT_SUCCESS 1
 
 /* Define to 1 if you have the `fchmod' function. */
-/* #undef HAVE_FCHMOD */
+#define HAVE_FCHMOD 1
 
 /* Define to 1 if you have the `fclose' function. */
-/* #undef HAVE_FCLOSE */
+#define HAVE_FCLOSE 1
 
 /* Define to 1 if you have the `fcntl' function. */
-/* #undef HAVE_FCNTL */
+#define HAVE_FCNTL 1
 
 /* Define to 1 if fcntl/F_SETFD denies child access to file descriptors. */
-/* #undef HAVE_FCNTL_F_SETFD */
+#define HAVE_FCNTL_F_SETFD 1
 
 /* Define to 1 if you have the `fdatasync' function. */
-/* #undef HAVE_FDATASYNC */
+#define HAVE_FDATASYNC 1
 
 /* Define to 1 if you have the `fgetc' function. */
-/* #undef HAVE_FGETC */
+#define HAVE_FGETC 1
 
 /* Define to 1 if you have the `fgets' function. */
-/* #undef HAVE_FGETS */
+#define HAVE_FGETS 1
 
 /* Define to 1 if allocated filesystem blocks are not zeroed. */
-#define HAVE_FILESYSTEM_NOTZERO 1
+/* #undef HAVE_FILESYSTEM_NOTZERO */
 
 /* Define to 1 if you have the `fopen' function. */
-/* #undef HAVE_FOPEN */
+#define HAVE_FOPEN 1
 
 /* Define to 1 if you have the `ftruncate' function. */
 #define HAVE_FTRUNCATE 1
 
 /* Define to 1 if you have the `fwrite' function. */
-/* #undef HAVE_FWRITE */
+#define HAVE_FWRITE 1
 
 /* Define to 1 if you have the `getaddrinfo' function. */
-/* #undef HAVE_GETADDRINFO */
+#define HAVE_GETADDRINFO 1
 
 /* Define to 1 if you have the `getcwd' function. */
-/* #undef HAVE_GETCWD */
+#define HAVE_GETCWD 1
 
 /* Define to 1 if you have the `getenv' function. */
-/* #undef HAVE_GETENV */
+#define HAVE_GETENV 1
 
 /* Define to 1 if you have the `getgid' function. */
 #define HAVE_GETGID 1
 
 /* Define to 1 if you have the `getopt' function. */
-/* #undef HAVE_GETOPT */
+#define HAVE_GETOPT 1
 
 /* Define to 1 if getopt supports the optreset variable. */
-/* #undef HAVE_GETOPT_OPTRESET */
+#define HAVE_GETOPT_OPTRESET 1
 
 /* Define to 1 if you have the `getrusage' function. */
-/* #undef HAVE_GETRUSAGE */
+#define HAVE_GETRUSAGE 1
 
 /* Define to 1 if you have the `gettimeofday' function. */
-/* #undef HAVE_GETTIMEOFDAY */
+#define HAVE_GETTIMEOFDAY 1
 
 /* Define to 1 if you have the `getuid' function. */
-/* #undef HAVE_GETUID */
+#define HAVE_GETUID 1
 
 /* Define to 1 if building Hash access method. */
-/* #undef HAVE_HASH */
+#define HAVE_HASH 1
 
 /* Define to 1 if you have the `hstrerror' function. */
-/* #undef HAVE_HSTRERROR */
+#define HAVE_HSTRERROR 1
 
 /* Define to 1 if you have the <inttypes.h> header file. */
-/* #undef HAVE_INTTYPES_H */
+#define HAVE_INTTYPES_H 1
+
+/* Define to 1 if you have the `isalpha' function. */
+#define HAVE_ISALPHA 1
+
+/* Define to 1 if you have the `isdigit' function. */
+#define HAVE_ISDIGIT 1
+
+/* Define to 1 if you have the `isprint' function. */
+#define HAVE_ISPRINT 1
 
 /* Define to 1 if you have the `isspace' function. */
-/* #undef HAVE_ISALPHA  */
-
-/* Define to 1 if you have the `isspace' function. */
-/* #undef HAVE_ISDIGIT  */
-
-/* Define to 1 if you have the `isspace' function. */
-/* #undef HAVE_ISPRINT  */
-
-/* Define to 1 if you have the `isspace' function. */
-/* #undef HAVE_ISSPACE  */
+#define HAVE_ISSPACE 1
 
 /* Define to 1 if you have the `localtime' function. */
-/* #undef HAVE_LOCALTIME */
+#define HAVE_LOCALTIME 1
 
 /* Define to 1 if you have the `memcmp' function. */
 #define HAVE_MEMCMP 1
@@ -186,22 +184,22 @@
 #define HAVE_MEMMOVE 1
 
 /* Define to 1 if you have the <memory.h> header file. */
-/* #undef HAVE_MEMORY_H */
+#define HAVE_MEMORY_H 1
 
 /* Define to 1 if you have the `mlock' function. */
-/* #undef HAVE_MLOCK */
+#define HAVE_MLOCK 1
 
 /* Define to 1 if you have the `mmap' function. */
-/* #undef HAVE_MMAP */
+#define HAVE_MMAP 1
 
 /* Define to 1 if you have the `mprotect' function. */
-/* #undef HAVE_MPROTECT */
+#define HAVE_MPROTECT 1
 
 /* Define to 1 if you have the `munlock' function. */
-/* #undef HAVE_MUNLOCK */
+#define HAVE_MUNLOCK 1
 
 /* Define to 1 if you have the `munmap' function. */
-/* #undef HAVE_MUNMAP */
+#define HAVE_MUNMAP 1
 
 /* Define to 1 to use the GCC compiler and 68K assembly language mutexes. */
 /* #undef HAVE_MUTEX_68K_GCC_ASSEMBLY */
@@ -229,7 +227,7 @@
 /* #undef HAVE_MUTEX_HPPA_MSEM_INIT */
 
 /* Define to 1 to use test-and-set mutexes with blocking mutexes. */
-/* #undef HAVE_MUTEX_HYBRID */
+#define HAVE_MUTEX_HYBRID 1
 
 /* Define to 1 to use the GCC compiler and IA64 assembly language mutexes. */
 /* #undef HAVE_MUTEX_IA64_GCC_ASSEMBLY */
@@ -245,7 +243,7 @@
 /* #undef HAVE_MUTEX_PPC_GCC_ASSEMBLY */
 
 /* Define to 1 to use POSIX 1003.1 pthread_XXX mutexes. */
-/* #undef HAVE_MUTEX_PTHREADS */
+#define HAVE_MUTEX_PTHREADS 1
 
 /* Define to 1 to use Reliant UNIX initspin mutexes. */
 /* #undef HAVE_MUTEX_RELIANTUNIX_INITSPIN */
@@ -276,7 +274,7 @@
 /* #undef HAVE_MUTEX_SPARC_GCC_ASSEMBLY */
 
 /* Define to 1 if the Berkeley DB library should support mutexes. */
-/* #undef HAVE_MUTEX_SUPPORT */
+#define HAVE_MUTEX_SUPPORT 1
 
 /* Define to 1 if mutexes hold system resources. */
 /* #undef HAVE_MUTEX_SYSTEM_RESOURCES */
@@ -307,7 +305,7 @@
 
 /* Define to 1 to use the GCC compiler and 64-bit x86 assembly language
    mutexes. */
-/* #undef HAVE_MUTEX_X86_64_GCC_ASSEMBLY */
+#define HAVE_MUTEX_X86_64_GCC_ASSEMBLY 1
 
 /* Define to 1 to use the GCC compiler and 32-bit x86 assembly language
    mutexes. */
@@ -320,49 +318,49 @@
 /* #undef HAVE_O_DIRECT */
 
 /* Define to 1 if building partitioned database support. */
-/* #undef HAVE_PARTITION */
+#define HAVE_PARTITION 1
 
 /* Define to 1 if you have the `pread' function. */
-/* #undef HAVE_PREAD */
+#define HAVE_PREAD 1
 
 /* Define to 1 if you have the `printf' function. */
-/* #undef HAVE_PRINTF */
+#define HAVE_PRINTF 1
 
 /* Define to 1 if you have the `pstat_getdynamic' function. */
 /* #undef HAVE_PSTAT_GETDYNAMIC */
 
 /* Define to 1 if you have the `pthread_self' function. */
-/* #undef HAVE_PTHREAD_SELF */
+#define HAVE_PTHREAD_SELF 1
 
 /* Define to 1 if you have the `pthread_yield' function. */
 /* #undef HAVE_PTHREAD_YIELD */
 
 /* Define to 1 if you have the `pwrite' function. */
-/* #undef HAVE_PWRITE */
+#define HAVE_PWRITE 1
 
 /* Define to 1 if building on QNX. */
 /* #undef HAVE_QNX */
 
 /* Define to 1 if you have the `qsort' function. */
-/* #undef HAVE_QSORT */
+#define HAVE_QSORT 1
 
 /* Define to 1 if building Queue access method. */
-/* #undef HAVE_QUEUE */
+#define HAVE_QUEUE 1
 
 /* Define to 1 if you have the `raise' function. */
-/* #undef HAVE_RAISE */
+#define HAVE_RAISE 1
 
 /* Define to 1 if you have the `rand' function. */
-/* #undef HAVE_RAND */
+#define HAVE_RAND 1
 
 /* Define to 1 if you have the `random' function. */
-/* #undef HAVE_RANDOM */
+#define HAVE_RANDOM 1
 
 /* Define to 1 if building replication support. */
-/* #undef HAVE_REPLICATION */
+#define HAVE_REPLICATION 1
 
 /* Define to 1 if building the Berkeley DB replication framework. */
-/* #undef HAVE_REPLICATION_THREADS */
+#define HAVE_REPLICATION_THREADS 1
 
 /* Define to 1 if building RPC client/server. */
 /* #undef HAVE_RPC */
@@ -371,10 +369,10 @@
 /* #undef HAVE_S60 */
 
 /* Define to 1 if you have the `sched_yield' function. */
-/* #undef HAVE_SCHED_YIELD */
+#define HAVE_SCHED_YIELD 1
 
 /* Define to 1 if you have the `select' function. */
-/* #undef HAVE_SELECT */
+#define HAVE_SELECT 1
 
 /* Define to 1 if you have the `setgid' function. */
 #define HAVE_SETGID 1
@@ -382,38 +380,38 @@
 /* Define to 1 if you have the `setuid' function. */
 #define HAVE_SETUID 1
 
-/* Define to 1 to configure Berkeley DB to use shared, read/write latches. */
-/* #undef HAVE_SHARED_LATCHES */
+/* Define to 1 to configure Berkeley DB to use read/write latches. */
+#define HAVE_SHARED_LATCHES 1
 
 /* Define to 1 if shmctl/SHM_LOCK locks down shared memory segments. */
 /* #undef HAVE_SHMCTL_SHM_LOCK */
 
 /* Define to 1 if you have the `shmget' function. */
-/* #undef HAVE_SHMGET */
+#define HAVE_SHMGET 1
 
 /* Define to 1 if you have the `sigaction' function. */
-/* #undef HAVE_SIGACTION */
+#define HAVE_SIGACTION 1
 
 /* Define to 1 if thread identifier type db_threadid_t is integral. */
-/* #undef HAVE_SIMPLE_THREAD_TYPE */
+#define HAVE_SIMPLE_THREAD_TYPE 1
 
 /* Define to 1 if you have the `snprintf' function. */
 #define HAVE_SNPRINTF 1
 
 /* Define to 1 if you have the `stat' function. */
-/* #undef HAVE_STAT */
+#define HAVE_STAT 1
 
 /* Define to 1 if building statistics support. */
-/* #undef HAVE_STATISTICS */
+#define HAVE_STATISTICS 1
 
 /* Define to 1 if you have the <stdint.h> header file. */
-/* #undef HAVE_STDINT_H */
+#define HAVE_STDINT_H 1
 
 /* Define to 1 if you have the <stdlib.h> header file. */
-/* #undef HAVE_STDLIB_H */
+#define HAVE_STDLIB_H 1
 
 /* Define to 1 if you have the `strcasecmp' function. */
-/* #undef HAVE_STRCASECMP */
+#define HAVE_STRCASECMP 1
 
 /* Define to 1 if you have the `strcat' function. */
 #define HAVE_STRCAT 1
@@ -425,19 +423,19 @@
 #define HAVE_STRDUP 1
 
 /* Define to 1 if you have the `strerror' function. */
-/* #undef HAVE_STRERROR */
+#define HAVE_STRERROR 1
 
 /* Define to 1 if you have the `strftime' function. */
-/* #undef HAVE_STRFTIME */
+#define HAVE_STRFTIME 1
 
 /* Define to 1 if you have the <strings.h> header file. */
-/* #undef HAVE_STRINGS_H */
+#define HAVE_STRINGS_H 1
 
 /* Define to 1 if you have the <string.h> header file. */
-/* #undef HAVE_STRING_H */
+#define HAVE_STRING_H 1
 
 /* Define to 1 if you have the `strncat' function. */
-/* #undef HAVE_STRNCAT */
+#define HAVE_STRNCAT 1
 
 /* Define to 1 if you have the `strncmp' function. */
 #define HAVE_STRNCMP 1
@@ -446,22 +444,22 @@
 #define HAVE_STRRCHR 1
 
 /* Define to 1 if you have the `strsep' function. */
-/* #undef HAVE_STRSEP */
+#define HAVE_STRSEP 1
 
 /* Define to 1 if you have the `strtol' function. */
-/* #undef HAVE_STRTOL */
+#define HAVE_STRTOL 1
 
 /* Define to 1 if you have the `strtoul' function. */
-#define	HAVE_STRTOUL 1
+#define HAVE_STRTOUL 1
 
-/* Define to 1 if `st_blksize' is member of `struct stat'. */
-/* #undef HAVE_STRUCT_STAT_ST_BLKSIZE */
+/* Define to 1 if `st_blksize' is a member of `struct stat'. */
+#define HAVE_STRUCT_STAT_ST_BLKSIZE 1
 
 /* Define to 1 if you have the `sysconf' function. */
-/* #undef HAVE_SYSCONF */
+#define HAVE_SYSCONF 1
 
 /* Define to 1 if port includes files in the Berkeley DB source code. */
-/* #undef HAVE_SYSTEM_INCLUDE_FILES */
+#define HAVE_SYSTEM_INCLUDE_FILES 1
 
 /* Define to 1 if you have the <sys/dir.h> header file, and it defines `DIR'.
    */
@@ -472,52 +470,53 @@
 /* #undef HAVE_SYS_NDIR_H */
 
 /* Define to 1 if you have the <sys/select.h> header file. */
-/* #undef HAVE_SYS_SELECT_H */
+#define HAVE_SYS_SELECT_H 1
 
 /* Define to 1 if you have the <sys/socket.h> header file. */
-/* #undef HAVE_SYS_SOCKET_H */
+#define HAVE_SYS_SOCKET_H 1
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
-/* #undef HAVE_SYS_STAT_H */
+#define HAVE_SYS_STAT_H 1
 
 /* Define to 1 if you have the <sys/time.h> header file. */
-/* #undef HAVE_SYS_TIME_H */
+#define HAVE_SYS_TIME_H 1
 
 /* Define to 1 if you have the <sys/types.h> header file. */
-/* #undef HAVE_SYS_TYPES_H 1*/
+#define HAVE_SYS_TYPES_H 1
 
 /* Define to 1 if you have the `time' function. */
-/* #undef HAVE_TIME */
+#define HAVE_TIME 1
 
 /* Define to 1 if you have the <unistd.h> header file. */
-/* #undef HAVE_UNISTD_H */
+#define HAVE_UNISTD_H 1
 
 /* Define to 1 if unlink of file with open file descriptors will fail. */
 /* #undef HAVE_UNLINK_WITH_OPEN_FAILURE */
 
 /* Define to 1 if port includes historic database upgrade support. */
-/* #undef HAVE_UPGRADE_SUPPORT */
+#define HAVE_UPGRADE_SUPPORT 1
 
 /* Define to 1 if building access method verification support. */
-/* #undef HAVE_VERIFY */
+#define HAVE_VERIFY 1
 
 /* Define to 1 if you have the `vsnprintf' function. */
 #define HAVE_VSNPRINTF 1
 
-/* Define to 1 if building VxWorks. */
+/* Define to 1 if building on VxWorks. */
 /* #undef HAVE_VXWORKS */
 
 /* Define to 1 if you have the `yield' function. */
 /* #undef HAVE_YIELD */
 
 /* Define to 1 if you have the `_fstati64' function. */
-/* #undef HAVE__FSTATI64 1*/
+/* #undef HAVE__FSTATI64 */
 
-/* Define to the sub-directory in which libtool stores uninstalled libraries. */
-/* #undef LT_OBJDIR */
+/* Define to the sub-directory in which libtool stores uninstalled libraries.
+   */
+#define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "support@sleepycat.com"
+#define PACKAGE_BUGREPORT "Oracle Technology Network Berkeley DB forum"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "Berkeley DB"
@@ -528,43 +527,46 @@
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "db-4.8.30"
 
+/* Define to the home page for this package. */
+#define PACKAGE_URL ""
+
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "4.8.30"
 
-/* The size of a `char', as computed by sizeof. */
+/* The size of `char', as computed by sizeof. */
 #define SIZEOF_CHAR 1
 
-/* The size of a `char *', as computed by sizeof. */
-#define SIZEOF_CHAR_P 4
+/* The size of `char *', as computed by sizeof. */
+#define SIZEOF_CHAR_P 8
 
-/* The size of a `int', as computed by sizeof. */
+/* The size of `int', as computed by sizeof. */
 #define SIZEOF_INT 4
 
-/* The size of a `long', as computed by sizeof. */
-#define SIZEOF_LONG 4
+/* The size of `long', as computed by sizeof. */
+#define SIZEOF_LONG 8
 
-/* The size of a `long long', as computed by sizeof. */
-/* #undef SIZEOF_LONG_LONG */
+/* The size of `long long', as computed by sizeof. */
+#define SIZEOF_LONG_LONG 8
 
-/* The size of a `short', as computed by sizeof. */
+/* The size of `short', as computed by sizeof. */
 #define SIZEOF_SHORT 2
 
-/* The size of a `size_t', as computed by sizeof. */
-#define SIZEOF_SIZE_T 4
+/* The size of `size_t', as computed by sizeof. */
+#define SIZEOF_SIZE_T 8
 
-/* The size of a `unsigned char', as computed by sizeof. */
+/* The size of `unsigned char', as computed by sizeof. */
 #define SIZEOF_UNSIGNED_CHAR 1
 
-/* The size of a `unsigned int', as computed by sizeof. */
+/* The size of `unsigned int', as computed by sizeof. */
 #define SIZEOF_UNSIGNED_INT 4
 
-/* The size of a `unsigned long', as computed by sizeof. */
-#define SIZEOF_UNSIGNED_LONG 4
+/* The size of `unsigned long', as computed by sizeof. */
+#define SIZEOF_UNSIGNED_LONG 8
 
-/* The size of a `unsigned long long', as computed by sizeof. */
-/* #undef SIZEOF_UNSIGNED_LONG_LONG */
+/* The size of `unsigned long long', as computed by sizeof. */
+#define SIZEOF_UNSIGNED_LONG_LONG 8
 
-/* The size of a `unsigned short', as computed by sizeof. */
+/* The size of `unsigned short', as computed by sizeof. */
 #define SIZEOF_UNSIGNED_SHORT 2
 
 /* Define to 1 if the `S_IS*' macros in <sys/stat.h> do not work properly. */
@@ -574,7 +576,7 @@
 #define STDC_HEADERS 1
 
 /* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
-/* #undef TIME_WITH_SYS_TIME */
+#define TIME_WITH_SYS_TIME 1
 
 /* Define to 1 to mask harmless uninitialized memory read/writes. */
 /* #undef UMRW */
@@ -591,7 +593,7 @@
 /* Define to `__inline__' or `__inline' if that's what the C compiler
    calls it, or to nothing if 'inline' is not supported under any name.  */
 #ifndef __cplusplus
-#define inline
+/* #undef inline */
 #endif
 
 /* type to use in place of socklen_t if not defined */

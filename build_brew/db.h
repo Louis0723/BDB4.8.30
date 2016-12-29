@@ -1,4 +1,3 @@
-/* DO NOT EDIT: automatically built by dist/s_brew. */
 /*
  * See the file LICENSE for redistribution information.
  *
@@ -21,7 +20,16 @@
 #ifndef _DB_H_
 #define	_DB_H_
 
-#include <AEEFile.h>
+#ifndef	__NO_SYSTEM_INCLUDES
+#include <sys/types.h>
+#include <inttypes.h>
+#include <stdint.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <pthread.h>
+#endif
+
 
 #if defined(__cplusplus)
 extern "C" {
@@ -54,17 +62,19 @@ extern "C" {
  */
 #ifndef	__BIT_TYPES_DEFINED__
 #define	__BIT_TYPES_DEFINED__
-typedef unsigned char u_int8_t;
-typedef short int16_t;
-typedef unsigned short u_int16_t;
-typedef int int32_t;
-typedef unsigned int u_int32_t;
+
+
+
+
+
+
+
 #endif
 
-typedef unsigned char u_char;
-typedef unsigned int u_int;
-typedef unsigned long u_long;
-typedef unsigned short u_short;
+
+
+
+
 
 /*
  * Missing ANSI types.
@@ -84,23 +94,23 @@ typedef unsigned short u_short;
  * get upset about that.  So far we haven't run on any machine where there's
  * no unsigned type the same size as a pointer -- here's hoping.
  */
-typedef unsigned long uintmax_t;
-typedef unsigned long uintptr_t;
 
-typedef IFile FILE;
-typedef u_int32_t off_t;
-typedef int pid_t;
-typedef unsigned int size_t;
-typedef int ssize_t;
-typedef long time_t;
+
+
+
+
+
+
+
+
 
 /*
  * Sequences are only available on machines with 64-bit integral types.
  */
-typedef int32_t db_seq_t;
+typedef int64_t db_seq_t;
 
 /* Thread and process identification. */
-typedef uintmax_t db_threadid_t;
+typedef pthread_t db_threadid_t;
 
 /* Basic types that are exported or quasi-exported. */
 typedef	u_int32_t	db_pgno_t;	/* Page number type. */
@@ -2427,12 +2437,7 @@ typedef struct entry {
 }
 #endif
 
-typedef struct {
-	AEEApplet a;			/* AEEApplet must be listed first. */
-	void *db_global_values;
-} BDBApp;
-int brew_bdb_begin __P((void));
-void brew_bdb_end __P((void));
+
 #endif /* !_DB_H_ */
 /* DO NOT EDIT: automatically built by dist/s_apiflags. */
 #define	DB_AGGRESSIVE				0x00000001

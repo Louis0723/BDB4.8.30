@@ -1,4 +1,3 @@
-/* DO NOT EDIT: automatically built by dist/s_brew. */
 /*-
  * See the file LICENSE for redistribution information.
  *
@@ -92,7 +91,6 @@
 #endif /* __INCLUDE_DIRECTORY */
 
 #endif /* !HAVE_SYSTEM_INCLUDE_FILES */
-#include "brew_db.h"
 
 #ifdef DB_WIN32
 #include "dbinc/win_db.h"
@@ -361,7 +359,7 @@ typedef struct __db_msgbuf {
 
 #define	PATH_DOT	"."	/* Current working directory. */
 				/* Path separator character(s). */
-#define	PATH_SEPARATOR	"\\/:"
+#define	PATH_SEPARATOR	"/"
 
 /*******************************************************
  * Environment.
